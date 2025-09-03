@@ -1,0 +1,949 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Starville Contracting — Full-Service Building Contractor</title>
+  <meta name="description" content="Starville Contracting: Full-service building contractor for extensions, loft conversions, refurbishments, new builds and all trades. Built on Quality. Driven by Precision. Delivered with Pride." />
+
+  <!-- Favicon / App icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="Logo01.png">
+  <link rel="apple-touch-icon" href="Logo01.png">
+  <meta name="theme-color" content="#0B2545">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Uploadcare (for image uploads in chat) -->
+  <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+
+  <style>
+    :root{ --brand:#111827; --accent:#f59e0b; }
+    body{ font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    .glass{ backdrop-filter: saturate(180%) blur(10px); background: rgba(17,24,39,.35); }
+    .fade-up{opacity:0; transform:translateY(16px); transition:all .7s ease}
+    .fade-up.reveal{opacity:1; transform:translateY(0)}
+    .text-shadow{ text-shadow:0 2px 12px rgba(0,0,0,.6); }
+    img[loading="lazy"]{ color:transparent; }
+  </style>
+</head>
+<body class="bg-white text-slate-900">
+
+  <!-- Intro Splash -->
+  <div id="intro" class="fixed inset-0 z-[60] grid place-items-center bg-[#0B2545] text-white transition-opacity duration-500">
+    <div class="border-2 border-white/70 px-14 py-12 rounded">
+      <img src="Logo01.png" alt="Starville Contracting Logo" class="h-32 md:h-40 object-contain"/>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="fixed top-0 inset-x-0 z-50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mt-4 flex items-center justify-between rounded-2xl glass p-3 ring-1 ring-white/10">
+        <a href="#top" class="flex items-center gap-3">
+          <img src="Logo01.png" alt="Starville Contracting" class="h-12 w-auto object-contain"/>
+          <span class="font-semibold text-white tracking-wide">Starville Contracting</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-white/90">
+          <a href="#services" class="hover:text-white">Services</a>
+          <a href="#approach" class="hover:text-white">Approach</a>
+          <a href="#work" class="hover:text-white">Projects</a>
+          <a href="#about" class="hover:text-white">About</a>
+          <a href="#reviews" class="hover:text-white">Reviews</a>
+          <a href="#contact" class="inline-flex items-center rounded-xl bg-amber-500 px-4 py-2 font-medium text-black hover:bg-amber-400">Contact</a>
+        </nav>
+        <button id="navToggle" aria-label="Open menu" class="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/20 text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileNav" class="hidden md:hidden bg-slate-900/95 text-white">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 grid gap-3">
+        <a href="#services" class="py-2">Services</a>
+        <a href="#approach" class="py-2">Approach</a>
+        <a href="#work" class="py-2">Projects</a>
+        <a href="#about" class="py-2">About</a>
+        <a href="#reviews" class="py-2">Reviews</a>
+        <a href="#contact" class="py-2 inline-flex items-center justify-center rounded-xl bg-amber-500 px-4 py-2 font-medium text-black hover:bg-amber-400">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="relative min-h-[92vh] grid place-items-center overflow-clip">
+    <video id="heroVideo"
+           autoplay muted loop playsinline preload="auto"
+           class="absolute inset-0 w-full h-full object-cover brightness-110 saturate-110"
+           aria-hidden="true" poster="Logo01.png">
+      <source src="video01.mp4" type="video/mp4" />
+    </video>
+    <div class="absolute inset-0 bg-[#0B2545]/35"></div>
+
+    <div class="relative mx-auto max-w-6xl px-6 py-28 text-center text-white">
+      <div class="mx-auto max-w-4xl bg-black/25 backdrop-blur-sm rounded-2xl px-6 sm:px-10 py-8">
+        <p class="mb-6 text-sm uppercase tracking-[0.25em] text-white/80">London • UK</p>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-[1.05] text-shadow">
+          Built on <span class="text-amber-400">Quality</span>.<br class="hidden sm:block"/>
+          Driven by <span class="text-amber-400">Precision</span>.<br class="hidden sm:block"/>
+          Delivered with <span class="text-amber-400">Pride</span>.
+        </h1>
+        <p class="mx-auto mt-6 max-w-3xl text-lg text-white/90 text-shadow">
+          Full-service building contractor for <b>extensions</b>, <b>loft conversions</b>, <b>refurbishments</b>, <b>new builds</b> &amp; all trades — residential and commercial.
+        </p>
+        <div class="mt-8 flex items-center justify-center gap-4">
+          <a href="#work" class="rounded-xl bg-white px-6 py-3 font-semibold text-slate-900 hover:bg-white/90">See Projects</a>
+          <a href="#contact" data-open-chat class="rounded-xl bg-amber-500 px-6 py-3 font-semibold text-black hover:bg-amber-400">Get a Quote</a>
+        </div>
+      </div>
+
+      <div class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 opacity-90">
+        <div class="rounded-2xl bg-white/40 p-4">
+          <div class="text-3xl font-extrabold">60+<span class="text-amber-400"> yrs</span></div>
+          <div class="text-white/90">Combined experience</div>
+        </div>
+        <div class="rounded-2xl bg-white/40 p-4">
+          <div class="text-3xl font-extrabold">Full</div>
+          <div class="text-white/90">All building trades</div>
+        </div>
+        <div class="rounded-2xl bg-white/40 p-4">
+          <div class="text-3xl font-extrabold">UK</div>
+          <div class="text-white/90">Nationwide coverage</div>
+        </div>
+        <div class="rounded-2xl bg-white/40 p-4">
+          <div class="text-3xl font-extrabold">A+</div>
+          <div class="text-white/90">Client satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services (compact) -->
+  <section id="services" class="relative py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="mb-8 flex items-end justify-between">
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">What we do</h2>
+        <a href="#contact" class="hidden sm:inline-flex items-center rounded-xl bg-slate-900 text-white px-4 py-2 font-medium hover:bg-slate-800">
+          Discuss your project
+        </a>
+      </div>
+
+      <!-- 4 quick buckets -->
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <!-- Build -->
+        <article class="rounded-2xl ring-1 ring-slate-200 p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold">Build</h3>
+          <p class="mt-1 text-slate-600">Extensions, lofts, new builds.</p>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">Single/Double</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">Wrap-around</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">Design &amp; Build</span>
+          </div>
+        </article>
+
+        <!-- Transform -->
+        <article class="rounded-2xl ring-1 ring-slate-200 p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold">Transform</h3>
+          <p class="mt-1 text-slate-600">Refurbs &amp; fit-outs.</p>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">Whole house</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">HMO</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">CAT A/B</span>
+          </div>
+        </article>
+
+        <!-- Structure -->
+        <article class="rounded-2xl ring-1 ring-slate-200 p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold">Structure</h3>
+          <p class="mt-1 text-slate-600">Groundworks to roof.</p>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">Foundations</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">Brick &amp; Block</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">Roofing</span>
+          </div>
+        </article>
+
+        <!-- Finish -->
+        <article class="rounded-2xl ring-1 ring-slate-200 p-6 hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold">Finish</h3>
+          <p class="mt-1 text-slate-600">Kitchens, bathrooms &amp; décor.</p>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">Tiling</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">Flooring</span>
+            <span class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-sm">Painting</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- Quick CTA + optional details -->
+      <div class="mt-8 flex items-center gap-3">
+        <a href="#contact" data-open-chat class="rounded-xl bg-amber-500 px-5 py-3 font-semibold text-black hover:bg-amber-400">Get a quote</a>
+        <details class="text-slate-700">
+          <summary class="cursor-pointer select-none underline">See full service list</summary>
+          <div class="mt-4 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+            <div class="rounded-xl ring-1 ring-slate-200 p-4">
+              <p class="text-sm font-semibold mb-2">Core</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-slate-100 text-sm">Extensions</span>
+                <span class="px-3 py-1 rounded-full bg-slate-100 text-sm">Loft conversions</span>
+                <span class="px-3 py-1 rounded-full bg-slate-100 text-sm">New builds</span>
+                <span class="px-3 py-1 rounded-full bg-slate-100 text-sm">Refurbishments</span>
+              </div>
+            </div>
+            <div class="rounded-xl ring-1 ring-slate-200 p-4">
+              <p class="text-sm font-semibold mb-2">Structure</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-slate-100 text-sm">Groundworks</span>
+                <span class="px-3 py-1 rounded-full bg-slate-100 text-sm">Brickwork &amp; Blockwork</span>
+                <span class="px-3 py-1 rounded-full bg-slate-100 text-sm">Roofing</span>
+                <span class="px-3 py-1 rounded-full bg-slate-100 text-sm">Steel coordination</span>
+              </div>
+            </div>
+            <div class="rounded-xl ring-1 ring-slate-200 p-4">
+              <p class="text-sm font-semibold mb-2">MEP &amp; Finish</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 rounded-full bg-slate-100 text-sm">Electrical</span>
+                <span class="px-3 py-1 rounded-full bg-slate-100 text-sm">Plumbing &amp; Heating</span>
+                <span class="px-3 py-1 rounded-full bg-slate-100 text-sm">Kitchens</span>
+                <span class="px-3 py-1 rounded-full bg-slate-100 text-sm">Bathrooms</span>
+                <span class="px-3 py-1 rounded-full bg-slate-100 text-sm">Tiling</span>
+                <span class="px-3 py-1 rounded-full bg-slate-100 text-sm">Flooring</span>
+                <span class="px-3 py-1 rounded-full bg-slate-100 text-sm">Painting &amp; Decorating</span>
+              </div>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Approach -->
+  <section id="approach" class="bg-slate-50 py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <h2 class="text-3xl md:text-4xl font-extrabold">Our Approach</h2>
+      <p class="mt-4 max-w-3xl text-slate-600">We combine process discipline with craftsmanship to deliver certainty—prioritising safety, quality and communication. From pre-construction planning to handover, we anticipate challenges and solve them early.</p>
+      <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <div class="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
+          <h3 class="font-semibold">Safety First</h3>
+          <p class="mt-2 text-slate-600">Toolbox talks, risk assessments and clean sites—because the most important thing we do every day is keep people safe.</p>
+        </div>
+        <div class="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
+          <h3 class="font-semibold">Quality Control</h3>
+          <p class="mt-2 text-slate-600">Benchmarks, sample panels and recorded inspections ensure every detail meets specification.</p>
+        </div>
+        <div class="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
+          <h3 class="font-semibold">Program Certainty</h3>
+          <p class="mt-2 text-slate-600">Coordinated sequencing across trades with transparent updates to keep your schedule on track.</p>
+        </div>
+        <div class="rounded-2xl bg-white p-6 ring-1 ring-slate-200">
+          <h3 class="font-semibold">Clean Handover</h3>
+          <p class="mt-2 text-slate-600">Snag-free finishes and thorough close-out documentation for a smooth completion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="work" class="py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="mb-12 flex items-end justify-between">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-extrabold">Selected Projects</h2>
+          <p class="mt-2 text-slate-600">A few examples across extensions, lofts, refurbs and finishes.</p>
+        </div>
+        <a href="#contact" class="hidden sm:inline-flex items-center rounded-xl border border-slate-300 px-4 py-2 font-medium hover:bg-slate-50">Start a project</a>
+      </div>
+      <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+
+        <article class="group overflow-hidden rounded-2xl ring-1 ring-slate-200">
+          <img src="Extension.png" alt="Residential Extension, Kent" class="h-56 w-full object-cover transition group-hover:scale-105" loading="lazy"/>
+          <div class="p-5">
+            <h3 class="font-semibold">Residential Extension, Kent</h3>
+            <p class="mt-1 text-sm text-slate-600">Design &amp; build, feature brickwork, MF ceilings; delivered ahead of program.</p>
+          </div>
+        </article>
+
+        <article class="group overflow-hidden rounded-2xl ring-1 ring-slate-200">
+          <img src="Commercial.png" alt="Commercial Fit-Out, London" class="h-56 w-full object-cover transition group-hover:scale-105" loading="lazy"/>
+          <div class="p-5">
+            <h3 class="font-semibold">Commercial Fit-Out, London</h3>
+            <p class="mt-1 text-sm text-slate-600">CAT B: partitions, MEP coordination, flooring and decoration.</p>
+          </div>
+        </article>
+
+        <article class="group overflow-hidden rounded-2xl ring-1 ring-slate-200">
+          <img src="Housing.png" alt="New-Build Housing, Essex" class="h-56 w-full object-cover transition group-hover:scale-105" loading="lazy"/>
+          <div class="p-5">
+            <h3 class="font-semibold">New-Build Housing, Essex</h3>
+            <p class="mt-1 text-sm text-slate-600">Groundworks to topping-out; sample panels approved first time.</p>
+          </div>
+        </article>
+
+        <article class="group overflow-hidden rounded-2xl ring-1 ring-slate-200">
+          <img src="Healthcare.png" alt="Healthcare Fit-Out, Surrey" class="h-56 w-full object-cover transition group-hover:scale-105" loading="lazy"/>
+          <div class="p-5">
+            <h3 class="font-semibold">Healthcare Fit-Out, Surrey</h3>
+            <p class="mt-1 text-sm text-slate-600">Hygienic finishes and compliance-ready MEP coordination.</p>
+          </div>
+        </article>
+
+        <article class="group overflow-hidden rounded-2xl ring-1 ring-slate-200">
+          <img src="Apartments.png" alt="Apartments, East London" class="h-56 w-full object-cover transition group-hover:scale-105" loading="lazy"/>
+          <div class="p-5">
+            <h3 class="font-semibold">Apartments, East London</h3>
+            <p class="mt-1 text-sm text-slate-600">Dry lining, kitchens, bathrooms and decorating; zero snags at PC.</p>
+          </div>
+        </article>
+
+        <article class="group overflow-hidden rounded-2xl ring-1 ring-slate-200">
+          <img src="Retail.png" alt="Retail Refresh, Milton Keynes" class="h-56 w-full object-cover transition group-hover:scale-105" loading="lazy"/>
+          <div class="p-5">
+            <h3 class="font-semibold">Retail Refresh, Milton Keynes</h3>
+            <p class="mt-1 text-sm text-slate-600">Fast-track weekend turnaround; tiling and paint refresh.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="bg-slate-50 py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-extrabold">About Starville</h2>
+          <p class="mt-4 text-slate-600">Construction is our family legacy. With over 60 years of combined experience, we bring a hands-on ethos and attention to detail to every project. From extensions and lofts to full refurbishments and new builds, we manage all trades to deliver reliable results with a personal touch.</p>
+          <p class="mt-4 text-slate-600">Clients trust us for our transparency, professionalism and commitment to doing things right the first time.</p>
+          <div class="mt-6 flex gap-4">
+            <a href="#reviews" class="rounded-xl border border-slate-300 px-4 py-2 font-medium hover:bg-slate-100">See Reviews</a>
+            <a href="#contact" class="rounded-xl bg-amber-500 px-4 py-2 font-semibold text-black hover:bg-amber-400" data-open-chat>Request a Quote</a>
+          </div>
+        </div>
+        <div class="rounded-2xl overflow-hidden ring-1 ring-slate-200">
+          <img src="about.jpg" alt="About Starville Contracting" class="w-full h-full object-cover" loading="lazy"/>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews" class="py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="mb-10">
+        <h2 class="text-3xl md:text-4xl font-extrabold">What Clients Say</h2>
+        <p class="mt-2 text-slate-600">A few words from homeowners and contractors we’ve worked with.</p>
+      </div>
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <figure class="rounded-2xl ring-1 ring-slate-200 p-6">
+          <blockquote class="text-slate-700">“Starville handled our extension end-to-end. Quality work and great communication.”</blockquote>
+          <figcaption class="mt-4 text-sm text-slate-500">— James R., Kent</figcaption>
+        </figure>
+        <figure class="rounded-2xl ring-1 ring-slate-200 p-6">
+          <blockquote class="text-slate-700">“Loft conversion finished on time and to spec. Very tidy team.”</blockquote>
+          <figcaption class="mt-4 text-sm text-slate-500">— Sophie T., Luton</figcaption>
+        </figure>
+        <figure class="rounded-2xl ring-1 ring-slate-200 p-6">
+          <blockquote class="text-slate-700">“Refurb quality was top-notch. Would recommend without hesitation.”</blockquote>
+          <figcaption class="mt-4 text-sm text-slate-500">— Mark &amp; Ella B., Dartford</figcaption>
+        </figure>
+        <figure class="rounded-2xl ring-1 ring-slate-200 p-6">
+          <blockquote class="text-slate-700">“Professional from start to finish. Decorating transformed our space.”</blockquote>
+          <figcaption class="mt-4 text-sm text-slate-500">— Natalie M., East London</figcaption>
+        </figure>
+        <figure class="rounded-2xl ring-1 ring-slate-200 p-6">
+          <blockquote class="text-slate-700">“Exactly what we needed—solid brickwork with a great finish.”</blockquote>
+          <figcaption class="mt-4 text-sm text-slate-500">— Daniel H., Milton Keynes</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA band -->
+  <section class="relative py-16">
+    <div class="absolute inset-0 bg-gradient-to-tr from-[#0B2545]/25 via-[#0B2545]/15 to-transparent"></div>
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="grid gap-6 items-center md:grid-cols-2">
+        <h3 class="text-2xl md:text-3xl font-extrabold">Let’s build something great together.</h3>
+        <div class="flex gap-4 md:justify-end">
+          <a href="#contact" data-open-chat class="rounded-xl bg-slate-900 px-5 py-3 text-white font-semibold hover:bg-slate-800">Get in touch</a>
+          <a href="#services" class="rounded-xl border border-slate-300 px-5 py-3 font-medium hover:bg-slate-50">View services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-slate-50 py-24">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="grid lg:grid-cols-2 gap-10">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-extrabold">Get in Touch</h2>
+          <p class="mt-4 text-slate-600">Email <a href="mailto:info@starvillecontracting.com" class="font-medium underline">info@starvillecontracting.com</a> or call <a href="tel:+447351732285" class="font-medium underline">+44 7351 732285</a>. Based in London, working across the UK.</p>
+          <div class="mt-6 rounded-2xl ring-1 ring-slate-200 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop" alt="London skyline" class="w-full h-60 object-cover"/>
+          </div>
+        </div>
+        <form class="rounded-2xl bg-white p-6 ring-1 ring-slate-200 grid gap-4" onsubmit="event.preventDefault();alert('Thanks! We\'ll get back to you shortly.');">
+          <div>
+            <label class="block text-sm font-medium">Name</label>
+            <input required type="text" class="mt-1 w-full rounded-xl border-slate-300 focus:border-amber-500 focus:ring-amber-500"/>
+          </div>
+          <div>
+            <label class="block text-sm font-medium">Email</label>
+            <input required type="email" class="mt-1 w-full rounded-xl border-slate-300 focus:border-amber-500 focus:ring-amber-500"/>
+          </div>
+          <div>
+            <label class="block text-sm font-medium">Phone</label>
+            <input type="tel" class="mt-1 w-full rounded-xl border-slate-300 focus:border-amber-500 focus:ring-amber-500"/>
+          </div>
+          <div>
+            <label class="block text-sm font-medium">Message</label>
+            <textarea rows="4" class="mt-1 w-full rounded-xl border-slate-300 focus:border-amber-500 focus:ring-amber-500" placeholder="Tell us about your project…"></textarea>
+          </div>
+          <button class="mt-2 rounded-xl bg-amber-500 px-5 py-3 font-semibold text-black hover:bg-amber-400">Send</button>
+          <p class="text-xs text-slate-500">By submitting this form you agree to be contacted by Starville Contracting.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 py-12">
+    <div class="mx-auto max-w-7xl px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <img src="Logo01.png" alt="Starville Contracting" class="h-9 w-auto object-contain"/>
+        <div>
+          <p class="font-semibold">Starville Contracting</p>
+          <p class="text-sm text-slate-500">© <span id="year"></span> Starville Contracting. All rights reserved.</p>
+        </div>
+      </div>
+      <nav class="flex items-center gap-5 text-sm text-slate-600">
+        <a href="#services">Services</a>
+        <a href="#work">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact" data-open-chat>Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Chat-to-Quote widget -->
+  <button id="openChatQuote"
+    class="fixed z-[70] bottom-5 right-5 md:bottom-6 md:right-6 rounded-full shadow-xl bg-amber-500 hover:bg-amber-400
+           text-black font-semibold px-5 py-3 flex items-center gap-2">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M2 5a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3H9l-5 5v-5H5a3 3 0 0 1-3-3V5z"/></svg>
+    Chat & Get a Quote
+  </button>
+
+  <div id="chatQuotePanel"
+       class="fixed z-[80] bottom-20 right-5 md:right-6 w-[94vw] max-w-[420px] hidden">
+    <div class="rounded-2xl overflow-hidden shadow-2xl ring-1 ring-black/5 bg-white">
+      <div class="flex items-center justify-between p-4 bg-[#0B2545] text-white">
+        <div class="flex items-center gap-2">
+          <img src="Logo01.png" alt="Starville" class="h-6 w-auto"/>
+          <div class="font-semibold">Starville Quote Assistant</div>
+        </div>
+        <button id="closeChatQuote" class="rounded-lg bg-white/10 hover:bg-white/20 px-2 py-1">✕</button>
+      </div>
+      <div class="h-1 bg-slate-100"><div id="cqProgress" class="h-1 bg-amber-500 w-0 transition-all duration-300"></div></div>
+      <div id="cqLog" class="p-4 space-y-3 max-h-[70vh] overflow-y-auto bg-slate-50"></div>
+      <div id="cqInput" class="p-3 border-t bg-white"></div>
+    </div>
+  </div>
+
+  <script>
+    /* ===== Site UI bits ===== */
+    const btn = document.getElementById('navToggle');
+    const menu = document.getElementById('mobileNav');
+    btn?.addEventListener('click',()=>menu.classList.toggle('hidden'));
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('reveal'); io.unobserve(e.target); } });
+    },{threshold:.15});
+    document.querySelectorAll('.fade-up').forEach(el=>io.observe(el));
+    const intro = document.getElementById('intro');
+    if(intro){
+      function dismissIntro(){ intro.classList.add('opacity-0','pointer-events-none'); setTimeout(()=>intro.remove(),450); }
+      intro.addEventListener('click', dismissIntro);
+      window.addEventListener('keydown', dismissIntro);
+      setTimeout(dismissIntro, 2000);
+    }
+
+    /* ========= Chat-to-Quote (service-specific flows) ========= */
+    const FORM_ENDPOINT = "https://formspree.io/f/REPLACE_ME"; // <- replace
+    const UPLOADCARE_PUBLIC_KEY = "demopublickey";            // <- replace
+
+    const $ = (s, p=document) => p.querySelector(s);
+    const el = (tag, cls="", html="") => {const n=document.createElement(tag); if(cls) n.className=cls; if(html) n.innerHTML=html; return n;}
+    const scrollLog = () => { const log = $("#cqLog"); log.scrollTop = log.scrollHeight; };
+    function bubble(text, who="bot") {
+      const wrap = el("div", "flex " + (who==="bot" ? "" : "justify-end"));
+      const b = el("div","max-w-[85%] rounded-2xl px-3 py-2 text-sm leading-relaxed " + (who==="bot" ? "bg-white ring-1 ring-slate-200 text-slate-800" : "bg-amber-500 text-black"));
+      b.innerHTML = text; wrap.appendChild(b); $("#cqLog").appendChild(wrap); scrollLog();
+    }
+    function chip(label, value) { const b=el("button","inline-flex items-center rounded-full border px-3 py-1 text-sm hover:bg-slate-50",label); b.type="button"; b.dataset.val=value??label; return b; }
+
+    const state = {
+      services: [],
+      propertyType: "Residential",
+      location: "",
+      details: {},         // per-service answers
+      timeline: "Flexible",
+      description: "",
+      files: [],
+      name: "", email: "", phone: "",
+      contactPref: "Either",
+      consentMatch: true,
+      estimate: {low:0, high:0}
+    };
+
+    // Baseline guide rates (GBP) — m² unless noted
+    const baseRates = {
+      "General Building (full project)":[1200,2800],
+      "Extension":[1800,3000],
+      "Loft Conversion":[1400,2200],
+      "Refurbishment":[800,1600],
+      "New Build":[1400,2400],
+      "Brickwork":[100,140],
+      "Dry Lining":[22,38],
+      "Plastering":[12,20],
+      "Carpentry & Joinery":[75,130],
+      "Roofing":[80,140],
+      "Kitchens":[500,1200],
+      "Bathrooms":[250,500],
+      "Tiling":[45,80],
+      "Painting":[8,16],
+      "Flooring":[30,70],
+      "Electrical":[45,75],              // per point
+      "Plumbing & Heating":[45,85],      // per point
+      "Groundworks & Drainage":[80,160],
+      "Landscaping":[40,90]
+    };
+
+    const minJob = 500;
+    const locationFactor = (loc)=> /^(E|EC|N|NW|SE|SW|W|WC|BR|CR|DA|EN|HA|IG|KT|RM|SM|TW|UB|WD)\d?|london/i.test((loc||"").trim()) ? 1.15 : 1.00;
+    const propertyFactor = (t)=> t==="Commercial" ? 1.05 : (t==="Residential" ? 1.00 : 1.02);
+    const timelineFactor = (t)=> t==="ASAP" ? 1.10 : (t==="1–3 weeks" ? 1.05 : 1.00);
+
+    // Service-specific question sets + quantity logic
+    const serviceForms = {
+      "Brickwork":{
+        fields:[
+          {key:"area", label:"Approx wall area (m²)", type:"number", placeholder:"e.g., 120"},
+          {key:"brickType", label:"Brick type", type:"select", options:["Common","Facing","Engineering"]},
+          {key:"pointing", label:"Pointing", type:"select", options:["Bucket handle","Flush","Weather struck"]},
+          {key:"openings", label:"Openings (doors/windows)", type:"number", placeholder:"e.g., 6"},
+          {key:"lintels", label:"Lintels included?", type:"select", options:["No","Yes"]},
+          {key:"scaffold", label:"Scaffolding needed?", type:"select", options:["No","Yes, 1 elevation","Yes, 2+ elevations"]}
+        ],
+        qty: d => Number(d.area||0),
+        mod: d => {
+          let m=1;
+          if(d.brickType==="Facing") m*=1.08;
+          if(d.brickType==="Engineering") m*=1.12;
+          if(d.pointing==="Weather struck") m*=1.05;
+          if((d.openings|0)>4) m*=1.03;
+          if(d.lintels==="Yes") m*=1.04;
+          if((d.scaffold||"").startsWith("Yes")) m*=1.07;
+          return m;
+        }
+      },
+      "Dry Lining":{
+        fields:[
+          {key:"area", label:"Board/skim area (m²)", type:"number"},
+          {key:"ceiling", label:"Includes ceilings?", type:"select", options:["No","Yes"]},
+          {key:"fire", label:"Fire rating", type:"select", options:["Standard","30 min","60 min"]},
+          {key:"acoustic", label:"Acoustic spec?", type:"select", options:["No","Yes"]}
+        ],
+        qty: d => Number(d.area||0),
+        mod: d => (d.ceiling==="Yes"?1.05:1)*(d.fire==="60 min"?1.12:d.fire==="30 min"?1.06:1)*(d.acoustic==="Yes"?1.06:1)
+      },
+      "Tiling":{
+        fields:[
+          {key:"area", label:"Tiled area (m²)", type:"number"},
+          {key:"tileSize", label:"Tile size", type:"select", options:["Standard (300–600mm)","Large format (>600mm)","Mosaic/small (<300mm)"]},
+          {key:"patterns", label:"Pattern/mitres?", type:"select", options:["None","Herringbone","Mitred edges"]}
+        ],
+        qty: d => Number(d.area||0),
+        mod: d => (d.tileSize==="Large format (>600mm)"?1.12:d.tileSize==="Mosaic/small (<300mm)"?1.10:1)*(d.patterns==="Herringbone"?1.08:d.patterns==="Mitred edges"?1.10:1)
+      },
+      "Painting":{
+        fields:[
+          {key:"area", label:"Paint area (m² of walls/ceilings)", type:"number"},
+          {key:"coats", label:"No. of coats", type:"select", options:["2","3+"]},
+          {key:"woodwork", label:"Include doors/skirting?", type:"select", options:["No","Yes"]}
+        ],
+        qty: d => Number(d.area||0),
+        mod: d => (d.coats==="3+"?1.12:1)*(d.woodwork==="Yes"?1.08:1)
+      },
+      "Electrical":{
+        fields:[
+          {key:"points", label:"Number of points (sockets/switches/lights)", type:"number", placeholder:"e.g., 25"},
+          {key:"rewire", label:"Rewire?", type:"select", options:["No","Yes, partial","Yes, full"]},
+          {key:"cu", label:"New consumer unit?", type:"select", options:["No","Yes"]},
+          {key:"cert", label:"Certification (EIC/EICR)?", type:"select", options:["No","Yes"]}
+        ],
+        qty: d => Number(d.points||0),
+        mod: d => (d.rewire==="Yes, partial"?1.15:d.rewire==="Yes, full"?1.35:1)*(d.cu==="Yes"?1.12:1)*(d.cert==="Yes"?1.05:1)
+      },
+      "Plumbing & Heating":{
+        fields:[
+          {key:"points", label:"Plumbing/heating points (sinks, WCs, showers, rads)", type:"number", placeholder:"e.g., 12"},
+          {key:"boiler", label:"Boiler/system work", type:"select", options:["None","Replace boiler","New system/UFH"]},
+          {key:"materials", label:"Include materials?", type:"select", options:["Labour only","Materials included"]},
+          {key:"gasSafe", label:"Gas Safe work?", type:"select", options:["No","Yes"]}
+        ],
+        qty: d => Number(d.points||0),
+        mod: d => (d.boiler==="Replace boiler"?1.25:d.boiler==="New system/UFH"?1.45:1)*(d.materials==="Materials included"?1.18:1)*(d.gasSafe==="Yes"?1.05:1)
+      },
+      "Roofing":{
+        fields:[
+          {key:"area", label:"Roof area (m²)", type:"number"},
+          {key:"type", label:"Roof type", type:"select", options:["Pitched - tile/slate","Flat - felt","Flat - EPDM"]},
+          {key:"insulation", label:"Insulation", type:"select", options:["None","Cold roof","Warm roof"]},
+          {key:"scaffold", label:"Scaffolding needed?", type:"select", options:["No","Yes"]}
+        ],
+        qty: d => Number(d.area||0),
+        mod: d => (d.type==="Flat - EPDM"?1.12:d.type==="Flat - felt"?1.05:1)*(d.insulation==="Warm roof"?1.12:d.insulation==="Cold roof"?1.05:1)*(d.scaffold==="Yes"?1.07:1)
+      },
+      "Kitchens":{
+        fields:[
+          {key:"units", label:"Cabinet units (no.)", type:"number", placeholder:"e.g., 14"},
+          {key:"worktop", label:"Worktop", type:"select", options:["Laminate","Solid wood","Quartz/stone"]},
+          {key:"appliances", label:"Appliances to fit (no.)", type:"number", placeholder:"e.g., 5"},
+          {key:"ripout", label:"Rip-out/disposal", type:"select", options:["No","Yes"]}
+        ],
+        qty: d => Math.max(0, Number(d.units||0) + 0.6*Number(d.appliances||0)),
+        mod: d => (d.worktop==="Solid wood"?1.10:d.worktop==="Quartz/stone"?1.25:1)*(d.ripout==="Yes"?1.08:1)
+      },
+      "Bathrooms":{
+        fields:[
+          {key:"fixtures", label:"Fixtures (toilet, basin, shower/bath) total", type:"number", placeholder:"e.g., 6"},
+          {key:"tilingArea", label:"Tiling area (m²)", type:"number", placeholder:"e.g., 20"},
+          {key:"wetroom", label:"Wetroom waterproofing", type:"select", options:["No","Yes"]}
+        ],
+        qty: d => Math.max(0, Number(d.fixtures||0) + 0.2*Number(d.tilingArea||0)),
+        mod: d => (d.wetroom==="Yes"?1.12:1)
+      },
+      "Flooring":{
+        fields:[
+          {key:"area", label:"Floor area (m²)", type:"number"},
+          {key:"type", label:"Floor type", type:"select", options:["Laminate/LVT","Engineered wood","Tile","Carpet"]},
+          {key:"prep", label:"Subfloor prep needed?", type:"select", options:["No","Yes"]}
+        ],
+        qty: d => Number(d.area||0),
+        mod: d => (d.type==="Engineered wood"?1.15:d.type==="Tile"?1.18:1)*(d.prep==="Yes"?1.08:1)
+      },
+      "Groundworks & Drainage":{
+        fields:[
+          {key:"area", label:"Slab/affected area (m²)", type:"number"},
+          {key:"trench", label:"Trench length (m)", type:"number"},
+          {key:"excavation", label:"Excavation/disposal", type:"select", options:["No","Yes"]}
+        ],
+        qty: d => Math.max(0, Number(d.area||0) + 0.6*Number(d.trench||0)),
+        mod: d => (d.excavation==="Yes"?1.12:1)
+      },
+      "Carpentry & Joinery":{
+        fields:[
+          {key:"doors", label:"No. of doors/frames", type:"number"},
+          {key:"stairs", label:"Stairs", type:"select", options:["No","Install/modify"]},
+          {key:"other", label:"Other carpentry (describe)", type:"text", placeholder:"e.g., alcove units"}
+        ],
+        qty: d => Number(d.doors||0),
+        mod: d => (d.stairs==="Install/modify"?1.25:1)
+      },
+      "Refurbishment":{
+        fields:[
+          {key:"area", label:"Affected floor area (m²)", type:"number"},
+          {key:"spec", label:"Spec level", type:"select", options:["Basic","Standard","Premium"]}
+        ],
+        qty: d => Number(d.area||0),
+        mod: d => (d.spec==="Premium"?1.18:d.spec==="Basic"?0.95:1)
+      },
+      "Extension":{
+        fields:[
+          {key:"area", label:"New floor area (m²)", type:"number"},
+          {key:"storeys", label:"Storeys", type:"select", options:["Single","Double"]},
+          {key:"structural", label:"Structural steel", type:"select", options:["Minimal","Moderate","Heavy"]}
+        ],
+        qty: d => Number(d.area||0),
+        mod: d => (d.storeys==="Double"?1.15:1)*(d.structural==="Moderate"?1.08:d.structural==="Heavy"?1.15:1)
+      },
+      "Loft Conversion":{
+        fields:[
+          {key:"area", label:"Converted area (m²)", type:"number"},
+          {key:"type", label:"Type", type:"select", options:["Velux","Dormer","Hip-to-gable","Mansard"]}
+        ],
+        qty: d => Number(d.area||0),
+        mod: d => (d.type==="Dormer"?1.12:d.type==="Hip-to-gable"?1.18:d.type==="Mansard"?1.25:1)
+      },
+      "New Build":{
+        fields:[
+          {key:"area", label:"GIA (m²)", type:"number"},
+          {key:"spec", label:"Spec level", type:"select", options:["Basic","Standard","Premium"]}
+        ],
+        qty: d => Number(d.area||0),
+        mod: d => (d.spec==="Premium"?1.15:d.spec==="Basic"?0.95:1)
+      },
+      "General Building (full project)":{
+        fields:[
+          {key:"area", label:"Affected/new floor area (m²)", type:"number"},
+          {key:"spec", label:"Spec level", type:"select", options:["Basic","Standard","Premium"]}
+        ],
+        qty: d => Number(d.area||0),
+        mod: d => (d.spec==="Premium"?1.15:d.spec==="Basic"?0.95:1)
+      },
+      "Landscaping":{
+        fields:[
+          {key:"area", label:"Area (m²)", type:"number"},
+          {key:"type", label:"Type", type:"select", options:["Turf","Patio","Composite decking","Fencing"]}
+        ],
+        qty: d => Number(d.area||0),
+        mod: d => (d.type==="Patio"?1.12:d.type==="Composite decking"?1.25:d.type==="Fencing"?1.10:1)
+      }
+    };
+
+    function renderServiceForm(svc, existing={}){
+      const cfg = serviceForms[svc];
+      const wrap = el("div","grid gap-3");
+      wrap.append(el("div","text-sm text-slate-600",`Service: <b>${svc}</b>`));
+      cfg.fields.forEach(f=>{
+        const row=el("div","grid gap-1");
+        row.append(el("label","text-sm font-medium",f.label));
+        let input;
+        if(f.type==="select"){
+          input=document.createElement("select");
+          input.className="rounded-xl border-slate-300 px-3 py-2";
+          f.options.forEach(o=>{ const opt=document.createElement("option"); opt.textContent=o; input.append(opt); });
+        }else{
+          input=document.createElement(f.type==="text"?"textarea":"input");
+          input.className="rounded-xl border-slate-300 px-3 py-2";
+          if(f.type==="number") { input.type="number"; input.step="1"; input.min="0"; }
+          if(f.type==="text") input.rows=2;
+          if(f.placeholder) input.placeholder=f.placeholder;
+        }
+        input.value = existing[f.key] ?? "";
+        input.dataset.key=f.key;
+        row.append(input);
+        wrap.append(row);
+      });
+      return wrap;
+    }
+
+    function collectFormValues(container){
+      const vals={};
+      container.querySelectorAll("input,select,textarea").forEach(inp=>{
+        vals[inp.dataset.key]=inp.type==="number" ? (inp.value?Number(inp.value):"") : inp.value;
+      });
+      return vals;
+    }
+
+    function priceForService(svc, d){
+      const [rl,rh] = baseRates[svc] || [0,0];
+      const qtyFn = (serviceForms[svc] && serviceForms[svc].qty) ? serviceForms[svc].qty : (()=>0);
+      const modFn = (serviceForms[svc] && serviceForms[svc].mod) ? serviceForms[svc].mod : (()=>1);
+      const qty = Math.max(0, Number(qtyFn(d)||0));
+      if(!qty || !rl) return {low:0, high:0};
+      const locF = locationFactor(state.location);
+      const propF = propertyFactor(state.propertyType);
+      const timeF = timelineFactor(state.timeline);
+      const mod  = modFn(d);
+      const low = Math.max(minJob, qty*rl*locF*propF*timeF*mod);
+      const high= Math.max(minJob, qty*rh*locF*propF*timeF*mod);
+      return {low, high};
+    }
+
+    function estimateTotal(){
+      let low=0, high=0;
+      (state.services||[]).forEach(s=>{
+        const det = state.details[s] || {};
+        const p = priceForService(s, det);
+        low += p.low; high += p.high;
+      });
+      const r=v=>Math.round(v/50)*50;
+      state.estimate={low:r(low), high:r(high)};
+      return state.estimate;
+    }
+
+    /* ===== Flow steps ===== */
+    function askServices(){
+      bubble("Hi! 👋 What can we help with today? Select all that apply.");
+      const box = el("div","flex flex-wrap gap-2");
+      const options = [
+        "General Building (full project)","Extension","Loft Conversion","Refurbishment","New Build",
+        "Brickwork","Dry Lining","Plastering","Carpentry & Joinery","Roofing","Kitchens","Bathrooms",
+        "Tiling","Painting","Flooring","Electrical","Plumbing & Heating","Groundworks & Drainage","Landscaping","Other"
+      ];
+      options.forEach(s=>{
+        const c=chip(s,s);
+        c.onclick=()=>{
+          if(s==="Other"){ bubble("No worries — you can describe it later.", "bot"); setStep(1); return; }
+          if(!state.services.includes(s)){ state.services.push(s); c.classList.add("bg-amber-500","text-black"); }
+          else { state.services.splice(state.services.indexOf(s),1); c.classList.remove("bg-amber-500","text-black"); }
+        };
+        box.append(c);
+      });
+      const next = el("button","mt-3 rounded-xl bg-amber-500 text-black font-semibold px-4 py-2","Next");
+      next.onclick=()=>{ if(!state.services.length){ alert("Please select at least one service."); return; } setStep(1); };
+      $("#cqInput").replaceChildren(box,next);
+    }
+
+    function askProperty(){
+      bubble("Is this residential or commercial?");
+      const row=el("div","flex flex-wrap gap-2");
+      ["Residential","Commercial","Other"].forEach(v=>{ const c=chip(v,v); c.onclick=()=>{state.propertyType=v; setStep(2);} ; row.append(c); });
+      $("#cqInput").replaceChildren(row);
+    }
+
+    function askLocation(){
+      bubble("Where is the job? <span class='text-slate-600'>(town or postcode)</span>");
+      const i=el("input","w-full rounded-xl border border-slate-300 px-3 py-2"); i.placeholder="e.g., E14 or Canary Wharf";
+      const next=el("button","mt-3 rounded-xl bg-amber-500 text-black font-semibold px-4 py-2","Next");
+      next.onclick=()=>{ state.location=i.value.trim(); setStep(3); };
+      $("#cqInput").replaceChildren(i,next);
+    }
+
+    function askServiceDetailsStart(){
+      state._svcIdx = 0;
+      showServiceDetail();
+    }
+
+    function showServiceDetail(){
+      const idx = state._svcIdx ?? 0;
+      const svc = state.services[idx];
+      if(svc==null){ setStep(4); return; }
+      bubble(`Great — let’s gather a little info for <b>${svc}</b> so we can price it better.`);
+      const formBox = renderServiceForm(svc, state.details[svc]||{});
+
+      const ctrls = el("div","flex items-center justify-between pt-2");
+      const back = el("button","rounded-xl border px-4 py-2","Back");
+      const skip = el("button","rounded-xl border px-4 py-2","Skip");
+      const next = el("button","rounded-xl bg-amber-500 text-black font-semibold px-4 py-2","Next");
+      back.onclick=()=>{ if(state._svcIdx>0){ state._svcIdx--; $("#cqInput").replaceChildren(); showServiceDetail(); } else { setStep(2); } };
+      skip.onclick=()=>{ state._svcIdx++; $("#cqInput").replaceChildren(); showServiceDetail(); };
+      next.onclick=()=>{
+        const vals = collectFormValues(formBox);
+        state.details[svc] = vals;
+        state._svcIdx++;
+        $("#cqInput").replaceChildren();
+        showServiceDetail();
+      };
+
+      $("#cqInput").replaceChildren(formBox, ctrls);
+    }
+
+    function askTimeline(){
+      bubble("When would you like to start?");
+      const row=el("div","flex flex-wrap gap-2");
+      ["ASAP","1–3 weeks","1–3 months","Flexible"].forEach(v=>{ const c=chip(v,v); c.onclick=()=>{state.timeline=v; setStep(5);} ; row.append(c); });
+      $("#cqInput").replaceChildren(row);
+    }
+
+    function askUploads(){
+      bubble("Add photos or drawings (optional). They help pricing accurately.");
+      const row=el("div","flex flex-wrap items-center gap-3");
+      const pick=el("button","rounded-xl bg-slate-900 text-white hover:bg-slate-800 px-4 py-2","Upload photos");
+      const count=el("span","text-sm text-slate-600","No files yet");
+      const preview=el("div","flex flex-wrap gap-2 mt-2");
+      pick.onclick=()=>{
+        uploadcare.openDialog(null,{publicKey:UPLOADCARE_PUBLIC_KEY, imagesOnly:true, multiple:true})
+          .done(gr=>gr.promise())
+          .done(group=>{
+            state.files=[]; preview.replaceChildren(); let done=0;
+            group.files().forEach(f=>f.done(file=>{
+              state.files.push(file.cdnUrl);
+              const img=el("img","h-16 w-16 rounded-lg object-cover ring-1 ring-slate-200");
+              img.src=file.cdnUrl + "-/scale_crop/120x120/smart/"; preview.append(img);
+              count.textContent=++done + (done>1?" files":" file") + " uploaded";
+            }));
+          });
+      };
+      row.append(pick,count);
+      const ctrls=el("div","flex items-center justify-between pt-2");
+      const back=el("button","rounded-xl border px-4 py-2","Back"); back.onclick=()=>setStep(4);
+      const next=el("button","rounded-xl bg-amber-500 text-black font-semibold px-4 py-2","Next"); next.onclick=()=>setStep(6);
+      ctrls.append(back,next);
+      $("#cqInput").replaceChildren(row,preview,ctrls);
+    }
+
+    function askDescription(){
+      bubble("Tell us about the job <span class='text-slate-600'>(scope, sizes, access, deadlines, materials…)</span>");
+      const t=el("textarea","w-full rounded-xl border-slate-300 px-3 py-2"); t.rows=4; t.placeholder="Type details…";
+      const ctrls=el("div","flex items-center justify-between pt-2");
+      const back=el("button","rounded-xl border px-4 py-2","Back"); back.onclick=()=>setStep(5);
+      const next=el("button","rounded-xl bg-amber-500 text-black font-semibold px-4 py-2","Get instant estimate"); next.onclick=()=>{ state.description=t.value.trim(); showEstimate(); };
+      ctrls.append(back,next);
+      $("#cqInput").replaceChildren(t,ctrls);
+    }
+
+    function showEstimate(){
+      const {low,high}=estimateTotal();
+      bubble(`Here’s a <b>ballpark estimate</b> based on what you’ve told us:
+        <div class="mt-2 rounded-xl bg-amber-50 border border-amber-200 p-3">
+          <div class="text-lg font-bold">£${low.toLocaleString()} – £${high.toLocaleString()}</div>
+          <div class="text-xs text-amber-800 mt-1">Guide only. Site conditions, final scope, specs and access can change pricing. Our team will review and confirm.</div>
+        </div>`);
+      bubble(`<span class="text-slate-700 text-sm">Share your contact details and we’ll refine the numbers and, if helpful, match you with a vetted tradesman.</span>`);
+      askContact();
+    }
+
+    function askContact(){
+      const form=el("form","grid gap-2");
+      const name=el("input","rounded-xl border-slate-300 px-3 py-2"); name.placeholder="Name *"; name.required=true;
+      const email=el("input","rounded-xl border-slate-300 px-3 py-2"); email.placeholder="Email *"; email.type="email"; email.required=true;
+      const phone=el("input","rounded-xl border-slate-300 px-3 py-2"); phone.placeholder="Phone";
+      const pref=el("select","rounded-xl border-slate-300 px-3 py-2"); ["Either","Email","Phone"].forEach(v=>{const o=document.createElement("option");o.textContent=v;pref.append(o);});
+      const consentWrap=el("label","inline-flex items-center gap-2 text-sm mt-1"); const consentBox=document.createElement("input"); consentBox.type="checkbox"; consentBox.checked=true; consentBox.className="rounded";
+      consentWrap.append(consentBox, document.createTextNode(" I’m happy to be matched with a vetted tradesman if that’s the best fit."));
+      const ctrls=el("div","flex items-center justify-between pt-1");
+      const back=el("button","rounded-xl border px-4 py-2","Back"); back.type="button"; back.onclick=()=>setStep(6);
+      const submit=el("button","rounded-xl bg-amber-500 text-black font-semibold px-4 py-2","Send request"); submit.type="submit";
+      ctrls.append(back,submit);
+      form.append(name,email,phone,pref,consentWrap,ctrls);
+
+      form.onsubmit=async(e)=>{
+        e.preventDefault();
+        state.name=name.value.trim(); state.email=email.value.trim(); state.phone=phone.value.trim(); state.contactPref=pref.value; state.consentMatch=consentBox.checked;
+        const {low,high}=state.estimate;
+        const fd=new FormData();
+        fd.append("services", state.services.join(", "));
+        fd.append("propertyType", state.propertyType);
+        fd.append("location", state.location);
+        fd.append("details", JSON.stringify(state.details));
+        fd.append("timeline", state.timeline);
+        fd.append("description", state.description);
+        state.files.forEach((u,i)=> fd.append(`file_url_${i+1}`, u));
+        fd.append("name", state.name); fd.append("email", state.email); fd.append("phone", state.phone);
+        fd.append("contactPref", state.contactPref); fd.append("consentMatch", String(state.consentMatch));
+        fd.append("estimate_low", low); fd.append("estimate_high", high);
+        fd.append("page_url", location.href);
+        try{
+          const res=await fetch(FORM_ENDPOINT,{method:"POST", body:fd, headers:{Accept:"application/json"}});
+          if(res.ok){
+            bubble("✅ Thanks! We’ve received your details. Our team will review and contact you to confirm a final quote (the price may change after site review).");
+            $("#cqInput").replaceChildren(el("button","mt-2 rounded-xl border px-4 py-2","Close"));
+            $("#cqInput").firstChild.onclick=()=> $("#chatQuotePanel").classList.add("hidden");
+          } else {
+            bubble("⚠️ Sorry, something went wrong sending your request. Please email <b>info@starvillecontracting.com</b>.");
+          }
+        }catch(err){ console.error(err); bubble("⚠️ Network error. Please try again, or email <b>info@starvillecontracting.com</b>."); }
+      };
+      $("#cqInput").replaceChildren(form);
+    }
+
+    const steps=[askServices,askProperty,askLocation,askServiceDetailsStart,askTimeline,askUploads,askDescription];
+    function setStep(i){
+      const idx=Math.max(0, Math.min(i, steps.length));
+      document.getElementById('cqProgress').style.width = (idx/steps.length)*100 + "%";
+      if(idx<steps.length){ steps[idx](); } else { showEstimate(); }
+      setStep.idx=idx;
+    }
+
+    const panel=document.getElementById('chatQuotePanel');
+    document.getElementById('openChatQuote').onclick=()=>{ panel.classList.remove('hidden'); document.getElementById('cqLog').replaceChildren(); bubble("Welcome to Starville 👋"); setStep(0); };
+    document.getElementById('closeChatQuote').onclick=()=> panel.classList.add('hidden');
+    document.querySelectorAll("[data-open-chat]").forEach(el=>el.addEventListener("click",(e)=>{ e.preventDefault(); document.getElementById('openChatQuote').click(); }));
+  </script>
+</body>
+</html>
