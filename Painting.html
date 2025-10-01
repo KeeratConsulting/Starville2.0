@@ -105,7 +105,7 @@
     function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-MEASUREMENT_ID', { 'anonymize_ip': true, 'link_attribution': true });
-    gtag('config', 'AW-CONVERSION_ID'); /* optional Ads config */
+    gtag('config', 'AW-CONVERSION_ID');
   </script>
 </head>
 <body class="bg-white text-slate-900">
@@ -114,16 +114,16 @@
   <header id="siteHeader" class="fixed top-0 inset-x-0 z-50 transition-colors duration-300">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="mt-4 flex items-center justify-between rounded-2xl glass p-3 ring-1 ring-white/10">
-        <a href="index.html#top" class="flex items-center gap-3">
+        <a href="/#top" class="flex items-center gap-3">
           <img src="Logo01.png" alt="Starville Contracting" class="h-12 w-auto object-contain"/>
           <span class="font-semibold text-white tracking-wide">Starville Contracting</span>
         </a>
         <nav class="hidden md:flex items-center gap-6 text-white/90">
-          <a href="index.html#services" class="hover:text-white">Services</a>
-          <a href="painting.html" class="hover:text-white">Painting &amp; Decorating</a>
-          <a href="index.html#work" class="hover:text-white">Projects</a>
-          <a href="index.html#about" class="hover:text-white">About</a>
-          <a href="index.html#reviews" class="hover:text-white">Reviews</a>
+          <a href="/#services" class="hover:text-white">Services</a>
+          <a href="/painting.html" class="hover:text-white">Painting &amp; Decorating</a>
+          <a href="/#work" class="hover:text-white">Projects</a>
+          <a href="/#about" class="hover:text-white">About</a>
+          <a href="/#reviews" class="hover:text-white">Reviews</a>
           <a href="#quote" class="inline-flex items-center rounded-xl bg-amber-500 px-4 py-2 font-medium text-black hover:bg-amber-400">Get a quote</a>
         </nav>
         <button id="navToggle" aria-label="Open menu" class="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/20 text-white">
@@ -133,11 +133,11 @@
     </div>
     <div id="mobileNav" class="hidden md:hidden bg-slate-900/95 text-white">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 grid gap-3">
-        <a href="index.html#services" class="py-2">Services</a>
-        <a href="painting.html" class="py-2">Painting &amp; Decorating</a>
-        <a href="index.html#work" class="py-2">Projects</a>
-        <a href="index.html#about" class="py-2">About</a>
-        <a href="index.html#reviews" class="py-2">Reviews</a>
+        <a href="/#services" class="py-2">Services</a>
+        <a href="/painting.html" class="py-2">Painting &amp; Decorating</a>
+        <a href="/#work" class="py-2">Projects</a>
+        <a href="/#about" class="py-2">About</a>
+        <a href="/#reviews" class="py-2">Reviews</a>
         <a href="#quote" class="py-2 inline-flex items-center justify-center rounded-xl bg-amber-500 px-4 py-2 font-medium text-black hover:bg-amber-400">Get a quote</a>
       </div>
     </div>
@@ -378,7 +378,7 @@
           <input type="hidden" name="utm_content" id="utm_content">
 
           <input type="hidden" name="service" value="Painting & Decorating"/>
-          <input type="hidden" name="page_url" value="painting.html"/>
+          <input type="hidden" name="page_url" value="/painting.html"/>
 
           <button class="mt-2 rounded-xl bg-amber-500 px-5 py-3 font-semibold text-black hover:bg-amber-400" onclick="if(window.gtag){gtag('event','select_content',{content_type:'cta',item_id:'form_submit_top'});}">Send request</button>
           <p class="text-xs text-slate-500">By submitting this form you agree to be contacted by Starville Contracting.</p>
@@ -426,24 +426,24 @@
         </div>
       </div>
       <nav class="flex items-center gap-5 text-sm text-slate-600">
-        <a href="index.html#services">Services</a>
-        <a href="painting.html">Painting &amp; Decorating</a>
-        <a href="index.html#work">Projects</a>
-        <a href="index.html#about">About</a>
+        <a href="/#services">Services</a>
+        <a href="/painting.html">Painting &amp; Decorating</a>
+        <a href="/#work">Projects</a>
+        <a href="/#about">About</a>
         <a href="#quote">Get a quote</a>
       </nav>
     </div>
   </footer>
 
   <!-- Sticky mobile CTA -->
-  <div class="sticky-cta bg-white/95 border-top border-slate-200 px-4 py-3 flex items-center justify-between">
+  <div class="sticky-cta bg-white/95 border-t border-slate-200 px-4 py-3 flex items-center justify-between">
     <a href="#quote" class="flex-1 mr-2 rounded-xl bg-amber-500 px-4 py-3 text-center font-semibold text-black hover:bg-amber-400" onclick="if(window.gtag){gtag('event','select_content',{content_type:'cta',item_id:'sticky_get_quote'});}">Get my quote</a>
     <a href="tel:+447351732285" class="flex-1 ml-2 rounded-xl bg-slate-900 px-4 py-3 text-center font-semibold text-white hover:bg-slate-800" onclick="if(window.gtag){gtag('event','click_call',{event_category:'CTA',event_label:'sticky_call'});}">Call now</a>
   </div>
 
   <script>
     // ===== Config & helpers =====
-    const FORM_ENDPOINT = "https://formspree.io/f/xovkezdr"; // replace if needed
+    const FORM_ENDPOINT = "https://formspree.io/f/xovkezdr";
     const $ = (s, p=document) => p.querySelector(s);
     document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -458,7 +458,6 @@
     function onScroll(){
       const y = window.scrollY || 0;
       if(y > solidAt) header.classList.add('header-solid'); else header.classList.remove('header-solid');
-      // Scroll depth (25/50/75/100)
       const h = document.documentElement.scrollHeight - window.innerHeight;
       const pct = Math.round((y / Math.max(h,1)) * 100);
       if(window.gtag){
@@ -540,7 +539,6 @@
       if(window.gtag){ gtag('event','add_room_row'); }
     });
 
-    // Start with one row to guide when selecting "known"
     roomsList.appendChild(roomRow());
     serializeRooms();
 
@@ -555,7 +553,7 @@
       const baths=Number($('#h_baths').value||0);
       const ch=$('#h_ch').value;
       const hsl=$('#h_hsl').value;
-      const floor = beds*12 + recs*16 + baths*6; // UK averages
+      const floor = beds*12 + recs*16 + baths*6;
       let area = floor*2.2 + hslArea(hsl);
       area *= heightF(ch);
       return Math.max(0, Math.round(area));
@@ -576,11 +574,9 @@
       e.preventDefault();
       const fd = new FormData(form);
 
-      // Extra flags for kitchens/bathrooms if in unknown mode
       fd.append('include_kitchen', document.getElementById('incKitchen').checked ? 'Yes' : 'No');
       fd.append('include_bathroom', document.getElementById('incBathroom').checked ? 'Yes' : 'No');
 
-      // Uploadcare file URLs
       try{
         const widgets = uploadcare?.getWidgets() || [];
         widgets.forEach((w,i)=>{ const v=w.value(); if(v){ fd.append(`file_${i+1}`, typeof v==='string' ? v : (v.cdnUrl||'')); } });
