@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Kent Painters &amp; Decorators — Starville Contracting</title>
+  <meta name="description" content="Trusted painters & decorators in Kent. Interior & exterior painting with clean prep and tidy finishes. Fast quotes. Serving Maidstone, Canterbury, Tunbridge Wells, Dartford & across Kent." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://starvillecontracting.com/painting.html" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="Logo01.png">
+  <link rel="apple-touch-icon" href="Logo01.png">
+  <meta name="theme-color" content="#0B2545">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kent Painters & Decorators — Starville Contracting">
+  <meta property="og:description" content="Interior & exterior painting in Kent. Clean prep. Sharp lines. Durable finishes. Get your quote.">
+  <meta property="og:image" content="about.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Optional: Uploadcare (photos) -->
+  <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+
+  <style>
+    :root{ --brand:#111827; --accent:#f59e0b; }
+    body{ font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    .glass{ backdrop-filter: saturate(180%) blur(10px); background: rgba(17,24,39,.35); }
+    .text-shadow{ text-shadow:0 2px 12px rgba(0,0,0,.6); }
+    img[loading="lazy"]{ color:transparent; }
+    .pill{ display:inline-flex; align-items:center; gap:.4rem; padding:.35rem .6rem; border-radius:999px; border:1px solid rgba(0,0,0,.08); background:#fff; font-size:.8rem;}
+    .shadow-soft{ box-shadow: 0 8px 24px rgba(2,6,23,.08); }
+    .sticky-cta{ position:fixed; left:0; right:0; bottom:0; z-index:60; }
+    @media (min-width:768px){ .sticky-cta{ display:none; } }
+    .header-solid { background: rgba(11,37,69,.92) !important; box-shadow: 0 8px 24px rgba(2,6,23,.25); }
+    .rooms-grid { display:grid; grid-template-columns: 1.2fr .8fr auto; gap:.5rem; }
+    @media (min-width:640px){ .rooms-grid{ grid-template-columns: 1.3fr .7fr auto; } }
+    .rooms-row { display:contents; }
+  </style>
+
+  <!-- JSON-LD (LocalBusiness + Service; Kent focus) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Starville Contracting",
+    "image": "https://starvillecontracting.com/Logo01.png",
+    "url": "https://starvillecontracting.com/painting.html",
+    "telephone": "+44 7351 732285",
+    "email": "info@starvillecontracting.com",
+    "address": { "@type": "PostalAddress", "addressRegion": "Kent", "addressCountry": "GB" },
+    "areaServed": ["Kent","Maidstone","Canterbury","Tunbridge Wells","Dartford","Sevenoaks","Gravesend","Ashford","Medway"],
+    "makesOffer": { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Painting & Decorating",
+      "areaServed": ["Kent","Maidstone","Canterbury","Tunbridge Wells","Dartford","Sevenoaks","Gravesend","Ashford","Medway"] } }
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question","name": "Do you supply paint or can we provide our own?",
+      "acceptedAnswer": {"@type": "Answer","text": "Either. We can supply premium trade paints or use yours if preferred."}
+    },{
+      "@type": "Question","name": "How quickly can you start in Kent?",
+      "acceptedAnswer": {"@type": "Answer","text": "We can often start within 1–2 weeks depending on scope and access. Use the form to share your dates."}
+    },{
+      "@type": "Question","name": "Do you paint doors, skirting and radiators?",
+      "acceptedAnswer": {"@type": "Answer","text": "Yes, woodwork and radiators are optional add-ons. Include quantities for a precise quote."}
+    },{
+      "@type": "Question","name": "Do you work out of hours?",
+      "acceptedAnswer": {"@type": "Answer","text": "Yes—evenings/weekends for commercial refreshes or tight timelines."}
+    },{
+      "@type": "Question","name": "What areas of Kent do you cover?",
+      "acceptedAnswer": {"@type": "Answer","text": "We cover Maidstone, Canterbury, Tunbridge Wells, Dartford, Sevenoaks, Gravesend, Ashford, Medway and nearby."}
+    },{
+      "@type": "Question","name": "How do you protect our home?",
+      "acceptedAnswer": {"@type": "Answer","text": "We protect floors and furniture, mask edges carefully, use dust control where needed, and tidy daily."}
+    },{
+      "@type": "Question","name": "What finishes do you offer?",
+      "acceptedAnswer": {"@type": "Answer","text": "Standard trade finish or premium spray/high-end finishes. We’ll match the right system to your space."}
+    },{
+      "@type": "Question","name": "Can you help if we don't know exact room sizes?",
+      "acceptedAnswer": {"@type": "Answer","text": "Yes—choose 'I’m not sure' in the form and we’ll estimate area based on bedrooms/receptions and ceiling height."}
+    },{
+      "@type": "Question","name": "Do you handle exterior weather-resistant systems?",
+      "acceptedAnswer": {"@type": "Answer","text": "Yes—masonry, render and timber systems specified for longevity based on exposure."}
+    }]
+  }
+  </script>
+
+  <!-- GA4 + Google Ads (replace IDs) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-MEASUREMENT_ID', { 'anonymize_ip': true, 'link_attribution': true });
+    gtag('config', 'AW-CONVERSION_ID'); /* optional Ads config */
+  </script>
+</head>
+<body class="bg-white text-slate-900">
+
+  <!-- Header -->
+  <header id="siteHeader" class="fixed top-0 inset-x-0 z-50 transition-colors duration-300">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mt-4 flex items-center justify-between rounded-2xl glass p-3 ring-1 ring-white/10">
+        <a href="index.html#top" class="flex items-center gap-3">
+          <img src="Logo01.png" alt="Starville Contracting" class="h-12 w-auto object-contain"/>
+          <span class="font-semibold text-white tracking-wide">Starville Contracting</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-white/90">
+          <a href="index.html#services" class="hover:text-white">Services</a>
+          <a href="painting.html" class="hover:text-white">Painting &amp; Decorating</a>
+          <a href="index.html#work" class="hover:text-white">Projects</a>
+          <a href="index.html#about" class="hover:text-white">About</a>
+          <a href="index.html#reviews" class="hover:text-white">Reviews</a>
+          <a href="#quote" class="inline-flex items-center rounded-xl bg-amber-500 px-4 py-2 font-medium text-black hover:bg-amber-400">Get a quote</a>
+        </nav>
+        <button id="navToggle" aria-label="Open menu" class="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/20 text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileNav" class="hidden md:hidden bg-slate-900/95 text-white">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 grid gap-3">
+        <a href="index.html#services" class="py-2">Services</a>
+        <a href="painting.html" class="py-2">Painting &amp; Decorating</a>
+        <a href="index.html#work" class="py-2">Projects</a>
+        <a href="index.html#about" class="py-2">About</a>
+        <a href="index.html#reviews" class="py-2">Reviews</a>
+        <a href="#quote" class="py-2 inline-flex items-center justify-center rounded-xl bg-amber-500 px-4 py-2 font-medium text-black hover:bg-amber-400">Get a quote</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative min-h-[60vh] grid place-items-center overflow-clip pt-28 md:pt-32">
+    <img src="Apartments.png" alt="Freshly painted interior in Kent" class="absolute inset-0 w-full h-full object-cover" loading="lazy"/>
+    <div class="absolute inset-0 bg-[#0B2545]/50"></div>
+    <div class="relative mx-auto max-w-4xl px-6 pb-8 text-center text-white">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-[1.05] text-shadow">
+        Painters &amp; Decorators in <span class="text-amber-400">Kent</span>
+      </h1>
+      <p class="mx-auto mt-6 max-w-3xl text-lg text-white/90 text-shadow">
+        Interior & exterior painting with clean prep, sharp lines and durable finishes. Maidstone, Canterbury, Tunbridge Wells, Dartford &amp; beyond.
+      </p>
+      <div class="mt-8 flex items-center justify-center gap-3 sm:gap-4">
+        <a href="#quote" class="rounded-xl bg-amber-500 px-6 py-3 font-semibold text-black hover:bg-amber-400 shadow-soft" onclick="if(window.gtag){gtag('event','select_content',{content_type:'cta',item_id:'hero_get_quote'});}">Get my quote</a>
+        <a href="tel:+447351732285" class="rounded-xl bg-white/90 px-6 py-3 font-semibold text-slate-900 hover:bg-white shadow-soft" onclick="if(window.gtag){gtag('event','click_call',{event_category:'CTA',event_label:'hero_call'});}">Call 07351 732285</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What we paint -->
+  <section class="py-14">
+    <div class="mx-auto max-w-7xl px-6">
+      <h2 class="text-3xl md:text-4xl font-extrabold">What we paint</h2>
+      <div class="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <article class="rounded-2xl ring-1 ring-slate-200 p-6">
+          <h3 class="text-xl font-semibold">Interiors</h3>
+          <p class="mt-2 text-slate-600">Walls, ceilings, doors &amp; skirtings, stain blocking, making-good.</p>
+        </article>
+        <article class="rounded-2xl ring-1 ring-slate-200 p-6">
+          <h3 class="text-xl font-semibold">Exteriors</h3>
+          <p class="mt-2 text-slate-600">Masonry, render, soffits/fascias, front doors, railings, weatherproof systems.</p>
+        </article>
+        <article class="rounded-2xl ring-1 ring-slate-200 p-6">
+          <h3 class="text-xl font-semibold">Commercial</h3>
+          <p class="mt-2 text-slate-600">Offices, retail, healthcare, landlord refresh, phased/out-of-hours.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="py-8">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="mb-6 flex items-end justify-between">
+        <h2 class="text-2xl md:text-3xl font-extrabold">Recent Painting Work</h2>
+        <a href="#quote" class="hidden sm:inline-flex items-center rounded-xl border border-slate-300 px-4 py-2 font-medium hover:bg-slate-50">Get a quote</a>
+      </div>
+      <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <img src="Retail.png" alt="Feature wall & tidy lines in Kent retail unit" class="rounded-2xl ring-1 ring-slate-200 h-56 w-full object-cover" loading="lazy"/>
+        <img src="Healthcare.png" alt="Clinic refresh in Kent with clean finishes" class="rounded-2xl ring-1 ring-slate-200 h-56 w-full object-cover" loading="lazy"/>
+        <img src="Apartments.png" alt="Apartment repaint, neat finish, Kent" class="rounded-2xl ring-1 ring-slate-200 h-56 w-full object-cover" loading="lazy"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form -->
+  <section id="quote" class="bg-slate-50 py-16">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="grid lg:grid-cols-2 gap-10 items-start">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-extrabold">Quick request form (Kent)</h2>
+          <p class="mt-3 text-slate-600">Simple form. If you don’t know sizes, tick <b>“I’m not sure”</b> and we’ll estimate from a couple of prompts. We’ll reply fast with a clear quote.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="pill">Interior &amp; exterior</span>
+            <span class="pill">Doors &amp; skirtings optional</span>
+            <span class="pill">Photos help (optional)</span>
+          </div>
+          <div class="mt-6 rounded-2xl ring-1 ring-slate-200 overflow-hidden">
+            <img src="Extension.png" alt="Careful masking and prep" class="w-full h-60 object-cover" loading="lazy"/>
+          </div>
+        </div>
+
+        <form id="paintForm" class="rounded-2xl bg-white p-6 ring-1 ring-slate-200 grid gap-4">
+          <!-- Contact -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-sm font-medium">Name</label>
+              <input required name="name" type="text" class="mt-1 w-full rounded-xl border-slate-300 focus:border-amber-500 focus:ring-amber-500"/>
+            </div>
+            <div>
+              <label class="block text-sm font-medium">Email</label>
+              <input required name="email" type="email" class="mt-1 w-full rounded-xl border-slate-300 focus:border-amber-500 focus:ring-amber-500"/>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-sm font-medium">Phone</label>
+              <input name="phone" type="tel" class="mt-1 w-full rounded-xl border-slate-300 focus:border-amber-500 focus:ring-amber-500"/>
+            </div>
+            <div>
+              <label class="block text-sm font-medium">Postcode / Town</label>
+              <input required name="location" type="text" class="mt-1 w-full rounded-xl border-slate-300 focus:border-amber-500 focus:ring-amber-500" placeholder="e.g., ME14 or Maidstone"/>
+            </div>
+          </div>
+
+          <!-- Two key choices -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="block text-sm font-medium">Property</label>
+              <select name="propertyType" class="mt-1 w-full rounded-xl border-slate-300 focus:border-amber-500 focus:ring-amber-500">
+                <option>Residential</option><option>Commercial</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-sm font-medium">Do you have the paint?</label>
+              <select name="paint_supply" class="mt-1 w-full rounded-xl border-slate-300 focus:border-amber-500 focus:ring-amber-500">
+                <option>We supply</option><option>Customer supplies</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Sizes: per-room if known OR helper if not sure -->
+          <div class="rounded-xl border border-slate-200 p-3 grid gap-3">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+              <span class="text-sm font-medium">Room sizes</span>
+              <div class="flex items-center gap-4">
+                <label class="text-sm inline-flex items-center gap-2">
+                  <input id="modeKnown" type="radio" name="size_mode" value="known" class="rounded" />
+                  I know sizes per room
+                </label>
+                <label class="text-sm inline-flex items-center gap-2">
+                  <input id="modeUnknown" type="radio" name="size_mode" value="unknown" class="rounded" checked />
+                  I’m not sure
+                </label>
+              </div>
+            </div>
+
+            <!-- Known sizes: per-room repeater -->
+            <div id="knownWrap" class="hidden">
+              <div class="rooms-grid items-center text-xs text-slate-500 mb-1">
+                <div>Room</div><div>Area (m²)</div><div></div>
+              </div>
+              <div id="roomsList" class="rooms-grid"></div>
+              <div class="flex items-center justify-between mt-2">
+                <button type="button" id="addRoom" class="rounded-xl bg-white px-3 py-2 text-sm ring-1 ring-slate-200 hover:bg-slate-100">+ Add room</button>
+                <div class="text-sm text-slate-600">Total: <b id="roomsTotal">0</b> m²</div>
+              </div>
+              <input type="hidden" name="rooms_json" id="roomsJson" />
+              <input type="hidden" name="area_total_known" id="areaKnownTotal" />
+            </div>
+
+            <!-- Unknown sizes: minimal helper -->
+            <div id="unknownWrap">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-sm font-medium">Rooms to paint (approx)</label>
+                  <input name="rooms" type="number" min="0" class="mt-1 w-full rounded-xl border-slate-300" placeholder="e.g., 5" inputmode="numeric"/>
+                </div>
+                <div>
+                  <label class="block text-sm font-medium">Include kitchens / bathrooms?</label>
+                  <div class="mt-1 flex items-center gap-3">
+                    <label class="text-sm inline-flex items-center gap-1"><input id="incKitchen" type="checkbox" class="rounded"/><span>Kitchen(s)</span></label>
+                    <label class="text-sm inline-flex items-center gap-1"><input id="incBathroom" type="checkbox" class="rounded"/><span>Bathroom(s)</span></label>
+                  </div>
+                </div>
+              </div>
+
+              <details class="mt-2 rounded-lg bg-slate-50 p-3">
+                <summary class="cursor-pointer text-sm font-medium">Help me estimate m² (optional)</summary>
+                <div class="grid grid-cols-3 gap-2 mt-2">
+                  <input id="h_beds" type="number" min="0" class="rounded-xl border-slate-300 px-3 py-2" placeholder="Bedrooms" inputmode="numeric"/>
+                  <input id="h_recepts" type="number" min="0" class="rounded-xl border-slate-300 px-3 py-2" placeholder="Receptions" inputmode="numeric"/>
+                  <select id="h_hsl" class="rounded-xl border-slate-300 px-3 py-2">
+                    <option>HSL: None</option><option>HSL: Typical</option><option>HSL: Large</option>
+                  </select>
+                </div>
+                <div class="grid grid-cols-2 gap-2 mt-2">
+                  <input id="h_baths" type="number" min="0" class="rounded-xl border-slate-300 px-3 py-2" placeholder="Bathrooms" inputmode="numeric"/>
+                  <select id="h_ch" class="rounded-xl border-slate-300 px-3 py-2">
+                    <option>Ceilings: Standard</option>
+                    <option>Ceilings: Tall</option>
+                    <option>Ceilings: Very tall</option>
+                  </select>
+                </div>
+                <div class="mt-2 flex items-center gap-2">
+                  <button type="button" id="runHelper" class="rounded-xl bg-white px-3 py-2 text-sm ring-1 ring-slate-200 hover:bg-slate-100">Estimate m²</button>
+                  <span class="text-sm text-slate-600">Estimated area: <b id="estArea">0</b> m²</span>
+                </div>
+                <input type="hidden" name="area_estimated_unknown" id="areaEstimatedUnknown" />
+              </details>
+            </div>
+          </div>
+
+          <!-- Optional extras collapsed -->
+          <details class="rounded-xl border border-slate-200 p-3">
+            <summary class="cursor-pointer text-sm font-medium">Optional details (doors, skirting, radiators)</summary>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-3">
+              <div>
+                <label class="block text-sm font-medium">Doors (no.)</label>
+                <input name="doors" type="number" min="0" class="mt-1 w-full rounded-xl border-slate-300" inputmode="numeric"/>
+              </div>
+              <div>
+                <label class="block text-sm font-medium">Skirting (m)</label>
+                <input name="skirting_m" type="number" min="0" class="mt-1 w-full rounded-xl border-slate-300" inputmode="numeric"/>
+              </div>
+              <div>
+                <label class="block text-sm font-medium">Radiators (no.)</label>
+                <input name="radiators" type="number" min="0" class="mt-1 w-full rounded-xl border-slate-300" inputmode="numeric"/>
+              </div>
+            </div>
+          </details>
+
+          <!-- Start timing -->
+          <div>
+            <label class="block text-sm font-medium">When would you like to start?</label>
+            <select name="timeline" class="mt-1 w-full rounded-xl border-slate-300 focus:border-amber-500 focus:ring-amber-500">
+              <option>ASAP</option>
+              <option>This week</option>
+              <option>Next 2 weeks</option>
+              <option>Next month</option>
+              <option>2–3 months</option>
+              <option>Flexible</option>
+            </select>
+          </div>
+
+          <!-- Photos -->
+          <div>
+            <label class="block text-sm font-medium">Photos (optional)</label>
+            <input type="hidden" role="uploadcare-uploader" data-public-key="demopublickey" data-multiple="true" data-images-only="true" />
+            <p class="mt-1 text-xs text-slate-500">Photos help us price faster and more accurately.</p>
+          </div>
+
+          <!-- Notes -->
+          <div>
+            <label class="block text-sm font-medium">Anything else?</label>
+            <textarea name="description" rows="3" class="mt-1 w-full rounded-xl border-slate-300 focus:border-amber-500 focus:ring-amber-500" placeholder="Access, finishes, colour changes, deadlines…"></textarea>
+          </div>
+
+          <!-- UTM capture -->
+          <input type="hidden" name="utm_source" id="utm_source">
+          <input type="hidden" name="utm_medium" id="utm_medium">
+          <input type="hidden" name="utm_campaign" id="utm_campaign">
+          <input type="hidden" name="utm_term" id="utm_term">
+          <input type="hidden" name="utm_content" id="utm_content">
+
+          <input type="hidden" name="service" value="Painting & Decorating"/>
+          <input type="hidden" name="page_url" value="painting.html"/>
+
+          <button class="mt-2 rounded-xl bg-amber-500 px-5 py-3 font-semibold text-black hover:bg-amber-400" onclick="if(window.gtag){gtag('event','select_content',{content_type:'cta',item_id:'form_submit_top'});}">Send request</button>
+          <p class="text-xs text-slate-500">By submitting this form you agree to be contacted by Starville Contracting.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kent-focused copy -->
+  <section class="py-10">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="rounded-2xl ring-1 ring-slate-200 p-6">
+        <h3 class="text-xl font-bold">Areas we cover in Kent</h3>
+        <p class="mt-2 text-slate-600">We provide residential and commercial painting & decorating across Kent, including <b>Maidstone</b>, <b>Canterbury</b>, <b>Tunbridge Wells</b>, <b>Dartford</b>, <b>Sevenoaks</b>, <b>Gravesend</b>, <b>Ashford</b> and <b>Medway</b>. Need reliable painters near you? Get a fast, no-obligation quote today.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs -->
+  <section class="py-14">
+    <div class="mx-auto max-w-7xl px-6">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Painting &amp; Decorating FAQs</h2>
+      <div class="mt-6 grid gap-4">
+        <details class="rounded-2xl ring-1 ring-slate-200 p-4"><summary class="font-medium cursor-pointer">Do you supply paint or can we provide our own?</summary><p class="mt-2 text-slate-600">Either. We can supply premium trade ranges or use yours if you already have it.</p></details>
+        <details class="rounded-2xl ring-1 ring-slate-200 p-4"><summary class="font-medium cursor-pointer">How quickly can you start in Kent?</summary><p class="mt-2 text-slate-600">Often within 1–2 weeks; share your dates and we’ll confirm the earliest slot.</p></details>
+        <details class="rounded-2xl ring-1 ring-slate-200 p-4"><summary class="font-medium cursor-pointer">Do you paint doors, skirting and radiators?</summary><p class="mt-2 text-slate-600">Yes—add quantities in the optional section and we’ll cost them clearly.</p></details>
+        <details class="rounded-2xl ring-1 ring-slate-200 p-4"><summary class="font-medium cursor-pointer">Can you work out of hours?</summary><p class="mt-2 text-slate-600">Yes—evenings and weekends for commercial refreshes or tight timelines.</p></details>
+        <details class="rounded-2xl ring-1 ring-slate-200 p-4"><summary class="font-medium cursor-pointer">What preparation do you include?</summary><p class="mt-2 text-slate-600">Masking, filling minor cracks, sanding and spot-priming as standard. Larger making-good can be added.</p></details>
+        <details class="rounded-2xl ring-1 ring-slate-200 p-4"><summary class="font-medium cursor-pointer">What brands do you use?</summary><p class="mt-2 text-slate-600">Dulux Trade, Johnstone’s, Tikkurila and others to suit the spec and use.</p></details>
+        <details class="rounded-2xl ring-1 ring-slate-200 p-4"><summary class="font-medium cursor-pointer">How do you protect floors and furniture?</summary><p class="mt-2 text-slate-600">We protect with sheeting, plastics and careful masking; we tidy daily.</p></details>
+        <details class="rounded-2xl ring-1 ring-slate-200 p-4"><summary class="font-medium cursor-pointer">Do you cover exterior weather-resistant systems?</summary><p class="mt-2 text-slate-600">Yes—masonry/render systems specified for longevity based on exposure.</p></details>
+        <details class="rounded-2xl ring-1 ring-slate-200 p-4"><summary class="font-medium cursor-pointer">How do I get a fast quote?</summary><p class="mt-2 text-slate-600">Complete the short form above and attach photos if possible—we’ll respond quickly with a clear, fixed quote.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 py-12">
+    <div class="mx-auto max-w-7xl px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <img src="Logo01.png" alt="Starville Contracting" class="h-9 w-auto object-contain"/>
+        <div>
+          <p class="font-semibold">Starville Contracting</p>
+          <p class="text-sm text-slate-500">© <span id="year"></span> Starville Contracting. All rights reserved.</p>
+        </div>
+      </div>
+      <nav class="flex items-center gap-5 text-sm text-slate-600">
+        <a href="index.html#services">Services</a>
+        <a href="painting.html">Painting &amp; Decorating</a>
+        <a href="index.html#work">Projects</a>
+        <a href="index.html#about">About</a>
+        <a href="#quote">Get a quote</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile CTA -->
+  <div class="sticky-cta bg-white/95 border-top border-slate-200 px-4 py-3 flex items-center justify-between">
+    <a href="#quote" class="flex-1 mr-2 rounded-xl bg-amber-500 px-4 py-3 text-center font-semibold text-black hover:bg-amber-400" onclick="if(window.gtag){gtag('event','select_content',{content_type:'cta',item_id:'sticky_get_quote'});}">Get my quote</a>
+    <a href="tel:+447351732285" class="flex-1 ml-2 rounded-xl bg-slate-900 px-4 py-3 text-center font-semibold text-white hover:bg-slate-800" onclick="if(window.gtag){gtag('event','click_call',{event_category:'CTA',event_label:'sticky_call'});}">Call now</a>
+  </div>
+
+  <script>
+    // ===== Config & helpers =====
+    const FORM_ENDPOINT = "https://formspree.io/f/xovkezdr"; // replace if needed
+    const $ = (s, p=document) => p.querySelector(s);
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile nav
+    const btn = document.getElementById('navToggle');
+    const menu = document.getElementById('mobileNav');
+    btn?.addEventListener('click',()=>menu.classList.toggle('hidden'));
+
+    // Header scroll state + scroll analytics
+    const header = document.getElementById('siteHeader');
+    const solidAt = 8;
+    function onScroll(){
+      const y = window.scrollY || 0;
+      if(y > solidAt) header.classList.add('header-solid'); else header.classList.remove('header-solid');
+      // Scroll depth (25/50/75/100)
+      const h = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = Math.round((y / Math.max(h,1)) * 100);
+      if(window.gtag){
+        if(!onScroll.q1 && pct >=25){ gtag('event','scroll_depth',{percent:25}); onScroll.q1=true; }
+        if(!onScroll.q2 && pct >=50){ gtag('event','scroll_depth',{percent:50}); onScroll.q2=true; }
+        if(!onScroll.q3 && pct >=75){ gtag('event','scroll_depth',{percent:75}); onScroll.q3=true; }
+        if(!onScroll.q4 && pct >=95){ gtag('event','scroll_depth',{percent:100}); onScroll.q4=true; }
+      }
+    }
+    onScroll();
+    window.addEventListener('scroll', onScroll, {passive:true});
+
+    // UTM capture
+    const params = new URLSearchParams(location.search);
+    ['utm_source','utm_medium','utm_campaign','utm_term','utm_content'].forEach(k=>{
+      const v = params.get(k) || '';
+      const el = document.getElementById(k);
+      if(el) el.value = v;
+    });
+
+    // Size mode toggle
+    const modeKnown = $('#modeKnown');
+    const modeUnknown = $('#modeUnknown');
+    const knownWrap = $('#knownWrap');
+    const unknownWrap = $('#unknownWrap');
+    function syncMode(){
+      const known = modeKnown.checked;
+      knownWrap.classList.toggle('hidden', !known);
+      unknownWrap.classList.toggle('hidden', known);
+    }
+    modeKnown.addEventListener('change', syncMode);
+    modeUnknown.addEventListener('change', syncMode);
+    syncMode();
+
+    // Rooms repeater (per-room)
+    const roomsList = $('#roomsList');
+    const roomsJson = $('#roomsJson');
+    const roomsTotal = $('#roomsTotal');
+    const areaKnownTotal = $('#areaKnownTotal');
+    const addRoomBtn = $('#addRoom');
+    const ROOM_TYPES = ['Bedroom','Living room','Dining room','Kitchen','Bathroom','Hall/Stairs/Landing','Office','Other'];
+
+    function roomRow(data={type:'Bedroom', area:''}){
+      const wrap = document.createElement('div'); wrap.className='rooms-row';
+      const type = document.createElement('select'); type.className='rounded-xl border-slate-300 px-3 py-2';
+      ROOM_TYPES.forEach(t=>{ const o=document.createElement('option'); o.textContent=t; type.append(o); });
+      type.value=data.type||'Bedroom';
+
+      const area = document.createElement('input'); area.type='number'; area.min='0'; area.placeholder='m²';
+      area.className='rounded-xl border-slate-300 px-3 py-2'; area.value = data.area || '';
+
+      const del = document.createElement('button'); del.type='button'; del.className='rounded-xl border px-3 py-2 text-sm'; del.textContent='Remove';
+
+      wrap.append(type, area, del);
+
+      function onChange(){ serializeRooms(); }
+      type.addEventListener('change', onChange);
+      area.addEventListener('input', onChange);
+      del.addEventListener('click', ()=>{ wrap.remove(); serializeRooms(); });
+
+      return wrap;
+    }
+
+    function serializeRooms(){
+      const rows = Array.from(roomsList.children);
+      const out = rows.map(row=>{
+        const [typeEl, areaEl] = row.children;
+        return {type: typeEl.value, area: Number(areaEl.value||0)};
+      }).filter(r=>r.area>0);
+      const total = out.reduce((s,r)=>s+r.area,0);
+      roomsJson.value = JSON.stringify(out);
+      roomsTotal.textContent = total.toFixed(0);
+      areaKnownTotal.value = String(total.toFixed(0));
+    }
+
+    addRoomBtn.addEventListener('click', ()=>{
+      roomsList.appendChild(roomRow());
+      serializeRooms();
+      if(window.gtag){ gtag('event','add_room_row'); }
+    });
+
+    // Start with one row to guide when selecting "known"
+    roomsList.appendChild(roomRow());
+    serializeRooms();
+
+    // Unknown mode estimator
+    const estAreaOut = $('#estArea');
+    const areaEstimatedUnknown = $('#areaEstimatedUnknown');
+    function hslArea(val){ if(val.includes('Large')) return 55; if(val.includes('Typical')) return 35; return 0; }
+    function heightF(val){ if(val.includes('Very')) return 1.18; if(val.includes('Tall')) return 1.08; return 1.00; }
+    function estimateArea(){
+      const beds=Number($('#h_beds').value||0);
+      const recs=Number($('#h_recepts').value||0);
+      const baths=Number($('#h_baths').value||0);
+      const ch=$('#h_ch').value;
+      const hsl=$('#h_hsl').value;
+      const floor = beds*12 + recs*16 + baths*6; // UK averages
+      let area = floor*2.2 + hslArea(hsl);
+      area *= heightF(ch);
+      return Math.max(0, Math.round(area));
+    }
+    $('#runHelper').addEventListener('click', ()=>{
+      const est = estimateArea();
+      estAreaOut.textContent = est || 0;
+      areaEstimatedUnknown.value = String(est || 0);
+      if(window.gtag){ gtag('event','estimate_area_clicked'); }
+    });
+
+    // Form submit to Formspree + Ads conversion
+    const form = document.getElementById('paintForm');
+    let started=false;
+    form.addEventListener('focusin', ()=>{ if(!started){ started=true; if(window.gtag) gtag('event','form_start',{form:'painting_quote'}); }});
+
+    form.addEventListener('submit', async (e)=>{
+      e.preventDefault();
+      const fd = new FormData(form);
+
+      // Extra flags for kitchens/bathrooms if in unknown mode
+      fd.append('include_kitchen', document.getElementById('incKitchen').checked ? 'Yes' : 'No');
+      fd.append('include_bathroom', document.getElementById('incBathroom').checked ? 'Yes' : 'No');
+
+      // Uploadcare file URLs
+      try{
+        const widgets = uploadcare?.getWidgets() || [];
+        widgets.forEach((w,i)=>{ const v=w.value(); if(v){ fd.append(`file_${i+1}`, typeof v==='string' ? v : (v.cdnUrl||'')); } });
+      }catch(_) {}
+      fd.append("service","Painting & Decorating");
+      const srcTag = location.search.includes('utm_') ? location.href : (location.href + (location.search ? '' : '?src=ads_kent'));
+      fd.append("page_url", srcTag);
+
+      try{
+        const res = await fetch(FORM_ENDPOINT,{ method:"POST", body:fd, headers:{Accept:"application/json"}});
+        if(res.ok){
+          if(window.gtag){
+            gtag('event','generate_lead',{event_category:'Form',event_label:'painting_kent'});
+            gtag('event','conversion', {'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL'});
+          }
+          alert("Thanks! We’ve got your request and will be in touch with a clear quote.");
+          form.reset();
+          serializeRooms();
+        } else {
+          alert("Sorry, something went wrong. Please email info@starvillecontracting.com");
+        }
+      }catch{
+        alert("Network error. Please try again or email info@starvillecontracting.com");
+      }
+    });
+  </script>
+</body>
+</html>
